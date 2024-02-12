@@ -1,0 +1,157 @@
+
+/* Timer display */
+.circle {
+    background-color: #fbca1f;
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.timer-display {
+    color: black;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 18px;
+    
+}
+
+/* control panel */
+.control-panel {
+    display: flex;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+/* set button */
+.set-b {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.set-b:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+.set-b:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+  
+
+/* Stop button */
+.stop-b {
+    background: #fbca1f;
+    padding: 0.6em 1.3em;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.stop-b:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+.stop-b:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+  
+.stop-div {
+    padding-left: 16px;
+}
+
+/* Start button */
+.start-b {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.start-b:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+.start-b:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+  
+.start-div {
+  padding-left: 16px;
+}
+
+/* set timer pop up */
+.popup  {
+  width: 400px;
+  background:white;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup p {
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  color: black;
+}
+
+.popup button {
+  width: 20%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #fbca1f;
+  color: black;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+

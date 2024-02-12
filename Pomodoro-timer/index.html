@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet", type="text/css", href="style.css" >
+    <title> pomodoro app </title>
+  </head>
+
+  <body>
+    <div class="circle">
+      <div class="timer-display">
+        <p id="timer-display">00:00</p>
+      </div>
+    </div>
+
+        
+
+    <div class="control-panel">
+      <div class="set-div">
+        <button class="set-b" onclick="openPopup()"> Set </button>
+      </div>
+      
+      <div class="popup" id="popup">
+        <p> Please set your time </p>
+
+        <input type="text" id="time" class="tinput" placeholder="              00:00"><br><br>
+        <button type="button" onclick="closePopup(); getValue()"> set </button>
+      </div>
+
+      <div class="stop-div">
+        <button class="stop-b" onclick="stopTime()"> Stop </button>
+      </div>
+
+      <div class="start-div">
+        <button class="start-b" onclick="startTime()"> Start </button>
+      </div>
+    </div>
+
+    <script src="./app.js"> </script>
+    </body>
+</html>
+
+
+
